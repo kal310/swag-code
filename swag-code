@@ -1,0 +1,75 @@
+//Enter your information in the fields below.
+let dominantClothingColor =
+let accessoryCount =
+let hairDye =
+let lettersInName =
+let handedness =
+
+//End questionnaire
+let clothingValue
+let hairValue
+let handValue
+
+switch (dominantClothingColor) {
+  case 'red':
+    clothingValue = 1;
+    break;
+  case 'yellow':
+    clothingValue = 2;
+    break;
+  case 'blue':
+    clothingValue = 3;
+    break;
+  case 'green':
+    clothingValue = 4;
+    break;
+  case 'black':
+    clothingValue = 5;
+    break;
+  case 'white':
+    clothingValue = 6;
+    break;
+  case 'purple':
+    clothingValue = 3.14;
+    break;
+  case 'orange':
+    clothingValue = 2.71;
+    break;
+  default:
+    clothingValue = 1.049;
+    break;
+}
+
+switch (hairDye) {
+  case 'red':
+      hairValue = 1;
+      break;
+    case 'yellow':
+      hairValue = 2;
+      break;
+    case 'blue':
+      hairValue = 3;
+      break;
+    case 'green':
+      hairValue = 4;
+      break;
+    case 'black':
+      hairValue = 5;
+      break;
+    case 'white':
+      hairValue = 6;
+      break;
+    case 'purple':
+      hairValue = 3.14;
+      break;
+    case 'orange':
+      hairValue = 2.71;
+      break;
+    default:
+      hairValue = 1.049;
+      break;
+}
+
+handedness === 'right' ? handValue = 6 : handValue = 7;
+
+console.log('Your swag level is ' + (((clothingValue / handValue) ^ (accessoryCount + 1)) / (hairValue + lettersInName)))
